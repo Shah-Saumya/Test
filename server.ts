@@ -1,7 +1,7 @@
 const handler = async (req: Request) => {
     const path = new URL(req.url).pathname;
     switch (path) {
-        case "test":
+        case "/":
             return new Response("Hello world");
 
         default:
